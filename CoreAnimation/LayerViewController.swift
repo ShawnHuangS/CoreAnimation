@@ -10,13 +10,35 @@ import UIKit
 
 class LayerViewController: UIViewController {
 
+
+    let layerView = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.view.backgroundColor = UIColor.gray
+        
+        
+        view.addSubview(layerView)
+        layerView.translatesAutoresizingMaskIntoConstraints = false
+        layerView.backgroundColor = UIColor.white
+        layerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        layerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        layerView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        layerView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let blueLayer = CALayer()
+        blueLayer.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
+        blueLayer.backgroundColor = UIColor.blue.cgColor
+        
+        
+        self.layerView.layer.addSublayer(blueLayer)
+       
+        
+    }
     /*
     // MARK: - Navigation
 

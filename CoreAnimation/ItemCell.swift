@@ -10,6 +10,7 @@ import UIKit
 
 enum Animation : String , CaseIterable{
     case The_Layer_Tree = "The Layer Tree"
+    case The_Backing_Image = "The Backing Image"
     
 }
 

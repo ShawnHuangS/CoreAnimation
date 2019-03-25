@@ -20,12 +20,9 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 1, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
-   
-
-      
 }
 extension ViewController : UITableViewDataSource , UITableViewDelegate
 {
@@ -53,7 +50,9 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
         
         switch animationVC {
             case .The_Layer_Tree:
-                vc = Vcs.getVC(vc: .LayerVC)
+                vc = LayerViewController()
+            case .The_Backing_Image:
+                vc = TheBackingImageViewController()
         }
         
         self.navigationController?.pushViewController(vc, animated: true)
