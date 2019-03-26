@@ -52,7 +52,7 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
             case .The_Layer_Tree:
                 vc = LayerViewController()
             case .The_Backing_Image:
-                vc = TheBackingImageViewController()
+                vc = Vcs.getVC(vc: .TheBackingImageVC)
         }
         
         self.navigationController?.pushViewController(vc, animated: true)

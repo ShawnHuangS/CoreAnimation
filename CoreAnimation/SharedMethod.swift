@@ -37,8 +37,9 @@ class Vcs  {
     enum storyboardID : String
     {
         case LayerVC = "LayerVC"
-
+        case TheBackingImageVC = "TheBackingImageVC"
     }
+    
     static func getVC(vc : storyboardID) -> UIViewController
     {
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)

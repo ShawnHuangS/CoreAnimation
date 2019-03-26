@@ -13,6 +13,7 @@
 		2122FD4F2240E96D00D46902 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD4E2240E96D00D46902 /* LayerViewController.swift */; };
 		2122FD51224225D600D46902 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD50224225D600D46902 /* README.md */; };
 		21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */; };
+		21627CE92248DAA300598E00 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 21627CE82248DAA200598E00 /* snowman.png */; };
 		21E489F2223A42AD00AB790A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E489F1223A42AD00AB790A /* AppDelegate.swift */; };
 		21E489F4223A42AD00AB790A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E489F3223A42AD00AB790A /* ViewController.swift */; };
 		21E489F7223A42AD00AB790A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E489F5223A42AD00AB790A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		2122FD4E2240E96D00D46902 /* LayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
 		2122FD50224225D600D46902 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBackingImageViewController.swift; sourceTree = "<group>"; };
+		21627CE82248DAA200598E00 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
 		21E489EE223A42AD00AB790A /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E489F1223A42AD00AB790A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21E489F3223A42AD00AB790A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21627CE72248DA9500598E00 /* Resouece */ = {
+			isa = PBXGroup;
+			children = (
+				21627CE82248DAA200598E00 /* snowman.png */,
+			);
+			path = Resouece;
+			sourceTree = "<group>";
+		};
 		21E489E5223A42AD00AB790A = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		21E489F0223A42AD00AB790A /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				21627CE72248DA9500598E00 /* Resouece */,
 				21E489F1223A42AD00AB790A /* AppDelegate.swift */,
 				21E489F3223A42AD00AB790A /* ViewController.swift */,
 				2122FD4E2240E96D00D46902 /* LayerViewController.swift */,
@@ -146,6 +157,7 @@
 				2122FD51224225D600D46902 /* README.md in Resources */,
 				21E48A06223A4D7300AB790A /* .gitignore in Resources */,
 				21E489FC223A42B000AB790A /* LaunchScreen.storyboard in Resources */,
+				21627CE92248DAA300598E00 /* snowman.png in Resources */,
 				2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */,
 				21E489F9223A42B000AB790A /* Assets.xcassets in Resources */,
 				21E489F7223A42AD00AB790A /* Main.storyboard in Resources */,

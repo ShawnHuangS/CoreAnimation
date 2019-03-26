@@ -41,6 +41,21 @@
             </objects>
             <point key="canvasLocation" x="854" y="78"/>
         </scene>
+        <!--The Backing Image View Controller-->
+        <scene sceneID="xUg-dv-UiQ">
+            <objects>
+                <viewController storyboardIdentifier="TheBackingImageVC" id="fyc-4p-9sW" customClass="TheBackingImageViewController" customModule="CoreAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7W7-oq-d6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pBK-KA-pUY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7W1-Sg-IXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-177"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mXE-6I-Kfh">
             <objects>
