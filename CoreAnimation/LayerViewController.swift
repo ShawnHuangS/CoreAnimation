@@ -12,6 +12,7 @@ class LayerViewController: UIViewController {
 
 
     let layerView = UIView()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +34,6 @@ class LayerViewController: UIViewController {
         let blueLayer = CALayer()
         blueLayer.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
         blueLayer.backgroundColor = UIColor.blue.cgColor
-        
         
         self.layerView.layer.addSublayer(blueLayer)
        

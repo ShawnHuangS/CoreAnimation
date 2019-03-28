@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        self.tableView(tableView, didSelectRowAt: IndexPath(row: 1, section: 0))
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 2, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -52,7 +52,9 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
             case .The_Layer_Tree:
                 vc = LayerViewController()
             case .The_Backing_Image:
-                vc = Vcs.getVC(vc: .TheBackingImageVC)
+                vc = TheBackingImageViewController()
+            case .Layer_Geometry:
+                vc = Vcs.getVC(vc: .LayerGeometryVC)
         }
         
         self.navigationController?.pushViewController(vc, animated: true)

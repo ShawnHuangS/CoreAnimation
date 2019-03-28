@@ -41,20 +41,78 @@
             </objects>
             <point key="canvasLocation" x="854" y="78"/>
         </scene>
-        <!--The Backing Image View Controller-->
-        <scene sceneID="xUg-dv-UiQ">
+        <!--Layer Geometry View Controller-->
+        <scene sceneID="bkX-0q-Rv0">
             <objects>
-                <viewController storyboardIdentifier="TheBackingImageVC" id="fyc-4p-9sW" customClass="TheBackingImageViewController" customModule="CoreAnimation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7W7-oq-d6h">
+                <viewController storyboardIdentifier="LayerGeometryVC" id="5wh-dQ-b6b" customClass="LayerGeometryViewController" customModule="CoreAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DCs-Lq-dM4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-AV-l2g">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="21n-8R-Wb8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="21n-8R-Wb8" secondAttribute="trailing" id="7wG-8j-0Xb"/>
+                                    <constraint firstItem="21n-8R-Wb8" firstAttribute="top" secondItem="pvq-AV-l2g" secondAttribute="top" id="G28-PG-thH"/>
+                                    <constraint firstAttribute="bottom" secondItem="21n-8R-Wb8" secondAttribute="bottom" id="KEY-EO-r73"/>
+                                    <constraint firstItem="21n-8R-Wb8" firstAttribute="leading" secondItem="pvq-AV-l2g" secondAttribute="leading" id="qhu-WS-A6E"/>
+                                    <constraint firstAttribute="width" secondItem="pvq-AV-l2g" secondAttribute="height" multiplier="1:1" id="zc7-WM-kM3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-Jp-bti">
+                                <rect key="frame" x="187" y="300" width="1" height="87.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="brd-PS-A5i"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUg-bS-08E">
+                                <rect key="frame" x="187" y="287.5" width="1" height="112.5"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.44705882349999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="MYl-C6-jYC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-ex-CKu">
+                                <rect key="frame" x="187" y="275" width="1" height="137.5"/>
+                                <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="DB1-bJ-8wW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="pBK-KA-pUY"/>
+                        <constraints>
+                            <constraint firstItem="nRR-ex-CKu" firstAttribute="centerX" secondItem="pvq-AV-l2g" secondAttribute="centerX" id="0UL-fo-fhE"/>
+                            <constraint firstItem="cvR-Jp-bti" firstAttribute="centerX" secondItem="21n-8R-Wb8" secondAttribute="centerX" id="2ms-uA-DVK"/>
+                            <constraint firstItem="cvR-Jp-bti" firstAttribute="centerY" secondItem="21n-8R-Wb8" secondAttribute="centerY" id="ALW-DN-wPa"/>
+                            <constraint firstItem="pvq-AV-l2g" firstAttribute="centerX" secondItem="tOA-W2-W3e" secondAttribute="centerX" id="Geq-m1-To7"/>
+                            <constraint firstItem="pvq-AV-l2g" firstAttribute="width" secondItem="DCs-Lq-dM4" secondAttribute="width" id="HPQ-YB-jzk"/>
+                            <constraint firstItem="XUg-bS-08E" firstAttribute="centerX" secondItem="pvq-AV-l2g" secondAttribute="centerX" id="LuM-n8-t1C"/>
+                            <constraint firstItem="nRR-ex-CKu" firstAttribute="height" secondItem="pvq-AV-l2g" secondAttribute="height" multiplier="1:2" constant="-50" id="VqJ-nK-4t1"/>
+                            <constraint firstItem="pvq-AV-l2g" firstAttribute="centerY" secondItem="tOA-W2-W3e" secondAttribute="centerY" id="YGm-8u-3ua"/>
+                            <constraint firstItem="XUg-bS-08E" firstAttribute="centerY" secondItem="pvq-AV-l2g" secondAttribute="centerY" id="fYL-fm-Z6i"/>
+                            <constraint firstItem="cvR-Jp-bti" firstAttribute="height" secondItem="21n-8R-Wb8" secondAttribute="height" multiplier="1:2" constant="-100" id="hoy-I8-ttV"/>
+                            <constraint firstItem="nRR-ex-CKu" firstAttribute="centerY" secondItem="pvq-AV-l2g" secondAttribute="centerY" id="n6c-dU-AyG"/>
+                            <constraint firstItem="XUg-bS-08E" firstAttribute="height" secondItem="pvq-AV-l2g" secondAttribute="height" multiplier="1:2" constant="-75" id="qQJ-kH-bfE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tOA-W2-W3e"/>
                     </view>
+                    <connections>
+                        <outlet property="hourView" destination="cvR-Jp-bti" id="Ckt-Hs-Rwy"/>
+                        <outlet property="minuteView" destination="XUg-bS-08E" id="eNx-Ww-TLk"/>
+                        <outlet property="secondView" destination="nRR-ex-CKu" id="FuF-Qn-qR9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7W1-Sg-IXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BO2-sz-OR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="-177"/>
+            <point key="canvasLocation" x="1641" y="-99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mXE-6I-Kfh">
@@ -75,4 +133,7 @@
             <point key="canvasLocation" x="-47.200000000000003" y="77.811094452773617"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock.png" width="480" height="480"/>
+    </resources>
 </document>
