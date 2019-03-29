@@ -66,24 +66,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-Jp-bti">
-                                <rect key="frame" x="187" y="300" width="1" height="87.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="185.5" y="300" width="4" height="87.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1" id="brd-PS-A5i"/>
+                                    <constraint firstAttribute="width" constant="4" id="brd-PS-A5i"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUg-bS-08E">
-                                <rect key="frame" x="187" y="287.5" width="1" height="112.5"/>
-                                <color key="backgroundColor" red="0.2901960784" green="0.44705882349999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="185.5" y="287.5" width="4" height="112.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1" id="MYl-C6-jYC"/>
+                                    <constraint firstAttribute="width" constant="4" id="MYl-C6-jYC"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-ex-CKu">
-                                <rect key="frame" x="187" y="275" width="1" height="137.5"/>
-                                <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="186.5" y="275" width="2" height="137.5"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1" id="DB1-bJ-8wW"/>
+                                    <constraint firstAttribute="width" constant="2" id="DB1-bJ-8wW"/>
                                 </constraints>
                             </view>
                         </subviews>
