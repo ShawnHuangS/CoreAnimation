@@ -12,6 +12,7 @@
 		2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD4B2240CFD400D46902 /* ItemCell.xib */; };
 		2122FD4F2240E96D00D46902 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD4E2240E96D00D46902 /* LayerViewController.swift */; };
 		2122FD51224225D600D46902 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD50224225D600D46902 /* README.md */; };
+		214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214028FB22534F1700680DCE /* VisualEffectsViewController.swift */; };
 		21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */; };
 		21627CE92248DAA300598E00 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 21627CE82248DAA200598E00 /* snowman.png */; };
 		21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */; };
@@ -30,6 +31,7 @@
 		2122FD4B2240CFD400D46902 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		2122FD4E2240E96D00D46902 /* LayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
 		2122FD50224225D600D46902 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		214028FB22534F1700680DCE /* VisualEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsViewController.swift; sourceTree = "<group>"; };
 		21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBackingImageViewController.swift; sourceTree = "<group>"; };
 		21627CE82248DAA200598E00 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
 		21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerGeometryViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				2122FD4E2240E96D00D46902 /* LayerViewController.swift */,
 				21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */,
 				21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */,
+				214028FB22534F1700680DCE /* VisualEffectsViewController.swift */,
 				21E489F5223A42AD00AB790A /* Main.storyboard */,
 				2122FD482240CE7700D46902 /* SharedMethod.swift */,
 				2122FD4A2240CFD400D46902 /* ItemCell.swift */,
@@ -183,6 +186,7 @@
 				2122FD4C2240CFD400D46902 /* ItemCell.swift in Sources */,
 				2122FD492240CE7900D46902 /* SharedMethod.swift in Sources */,
 				21E489F4223A42AD00AB790A /* ViewController.swift in Sources */,
+				214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */,
 				21E489F2223A42AD00AB790A /* AppDelegate.swift in Sources */,
 				2122FD4F2240E96D00D46902 /* LayerViewController.swift in Sources */,
 			);

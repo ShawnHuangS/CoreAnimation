@@ -39,6 +39,7 @@ class Vcs  {
         case LayerVC = "LayerVC"
         case TheBackingImageVC = "TheBackingImageVC"
         case LayerGeometryVC = "LayerGeometryVC"
+        case VisualEffectsVC = "VisualEffectsVC"
     }
     
     static func getVC(vc : storyboardID) -> UIViewController

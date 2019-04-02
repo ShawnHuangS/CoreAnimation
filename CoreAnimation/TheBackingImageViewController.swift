@@ -12,7 +12,7 @@ class TheBackingImageViewController: UIViewController {
     
     let layerView = UIView()
     let circleView = UIView()
-    
+    let blueLayer = CALayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.gray
@@ -26,6 +26,9 @@ class TheBackingImageViewController: UIViewController {
         
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        blueLayer.delegate = nil
+    }
     
     func circleViewUI()
     {
@@ -38,7 +41,7 @@ class TheBackingImageViewController: UIViewController {
         circleView.widthAnchor.constraint(equalToConstant: 200).isActive = true
         circleView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
-        let blueLayer = CALayer()
+        
         blueLayer.frame = CGRect.init(x: 50, y: 50, width: 100, height: 100)
         blueLayer.backgroundColor = UIColor.blue.cgColor
         blueLayer.delegate = self
@@ -49,6 +52,7 @@ class TheBackingImageViewController: UIViewController {
         blueLayer.display()
         
     }
+    
 
     
     func layerViewUI()
