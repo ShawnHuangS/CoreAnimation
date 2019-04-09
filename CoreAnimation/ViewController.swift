@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        self.tableView(tableView, didSelectRowAt: IndexPath(row: 3, section: 0))
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 5, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -57,6 +57,10 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
                 vc = Vcs.getVC(vc: .LayerGeometryVC)
             case .Visual_Effects:
                 vc = Vcs.getVC(vc: .VisualEffectsVC)
+            case .Transforms:
+                vc  = Vcs.getVC(vc: .TransformsVC)
+            case .SpecializedLayers:
+                vc = Vcs.getVC(vc: .SpecializedLayersVC)
             
         }
         

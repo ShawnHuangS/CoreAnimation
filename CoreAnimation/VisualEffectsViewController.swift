@@ -47,6 +47,20 @@ class VisualEffectsViewController: UIViewController {
             
         }
     }
+    @IBOutlet weak var ballImageView: UIImageView!{
+        didSet
+        {
+            let maskLayer = CALayer()
+            maskLayer.frame = self.ballImageView.bounds
+            let maskImg = UIImage.init(named: "star")
+            maskLayer.contents = maskImg?.cgImage
+            
+            ballImageView.layer.mask = maskLayer
+            
+        }
+    }
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,7 +77,6 @@ class VisualEffectsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

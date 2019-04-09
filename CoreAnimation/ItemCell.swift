@@ -13,6 +13,8 @@ enum Animation : String , CaseIterable{
     case The_Backing_Image = "The Backing Image"
     case Layer_Geometry = "Layer Geometry"
     case Visual_Effects = "Visual Effects"
+    case Transforms = "Transforms"
+    case SpecializedLayers = "SpecializedLayers"
     
 }
 

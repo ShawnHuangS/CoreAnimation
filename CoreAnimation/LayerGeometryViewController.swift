@@ -96,6 +96,7 @@ class LayerGeometryViewController: UIViewController {
         {
             // get touched layer
             let layer = self.layerView.layer.hitTest(point!)
+            
             if layer == blueLayer
             {
                 ShareMethod.showAlertView(TipString: "inside blue layer")
