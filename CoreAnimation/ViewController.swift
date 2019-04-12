@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
-        self.tableView.register(UINib.init(nibName: Cell.animationItem.cellClass, bundle: nil), forCellReuseIdentifier: Cell.animationItem.cellID)
+        
+        self.tableView.register(UINib.init(nibName: "\(ItemCell.self)", bundle: nil), forCellReuseIdentifier: Cell.animationItem.cellID)
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
