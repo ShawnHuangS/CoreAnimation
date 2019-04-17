@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SpecializedLayersViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
-  
+    
+   
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.containerView.backgroundColor = UIColor.gray
         
-        self.gradientLayerBtn(UIButton())
         
         // Do any additional setup after loading the view.
     }
@@ -120,10 +127,114 @@ class SpecializedLayersViewController: UIViewController {
         
         gradientLayer.startPoint = CGPoint.init(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint.init(x: 1, y: 1)
-
+        
     }
     
+    @IBAction func replicatorLayerBtn(_ sender: Any) {
+        self.clearLayer()
+        
+        let replicator = CAReplicatorLayer()
+        replicator.frame = self.containerView.bounds
+        self.containerView.layer.addSublayer(replicator)
+        
+        replicator.instanceCount = 10
+//        replicator.instanceColor = UIColor.red.cgColor
+        
+        //apply a transform for each instance
+        var transform = CATransform3DIdentity
+        transform = CATransform3DTranslate(transform, 0, 200, 0)
+        transform = CATransform3DRotate(transform, .pi/5, 0, 0, 1)
+        transform = CATransform3DTranslate(transform, 0, -200, 0)
+        replicator.instanceTransform = transform
+        
+        //apply a color shift for each instance
+        replicator.instanceBlueOffset = -0.1
+        replicator.instanceGreenOffset = -0.1
+
+        //create a sublayer and place it inside the replicator
+        let layer = CALayer()
+        layer.frame = CGRect.init(x: 100, y: 100, width: 100, height: 100)
+        layer.backgroundColor = UIColor.white.cgColor
+        replicator.addSublayer(layer)
+    }
+
+    @IBAction func emitterLayerBtn(_ sender: Any) {
+        self.clearLayer()
+        
+        let emitter = CAEmitterLayer()
+        emitter.frame = self.containerView.bounds
+        self.containerView.layer.addSublayer(emitter)
+        
+        //configure emitter
+        emitter.renderMode = .additive
+        
+        emitter.emitterPosition = CGPoint.init(x: self.containerView.frame.width / 2 , y: 0) // 發射位置
+        emitter.emitterSize = CGSize.init(width: self.containerView.frame.width, height: self.containerView.frame.height)  //發射器的尺寸
+        emitter.emitterShape = .line
+        
+        
+        //create a particle template
+        let cell = CAEmitterCell()
+        cell.contents = UIImage.init(named: "maple")?.cgImage
+        cell.birthRate = 5  //  粒子的創建速率
+        
+        cell.lifetime = 10 // 每個粒子的存活時間
+        cell.lifetimeRange = 3 // 粒子存活時間容許的容差範圍
+//        cell.color = UIColor.init(red: 1, green: 0.5, blue: 0.1, alpha: 1).cgColor
+
+        cell.alphaSpeed = -0.2  // 每秒鐘的變化，比如寫 – 0.1 就是每秒透明度減少 0.1 這樣就會有慢慢消失的效果
+        cell.velocity = 100  // 粒子的速度
+        cell.velocityRange = 50  // 粒子速度的容差
+        
+        cell.emissionLongitude = .pi   //XY 平面的發射角度
+//        cell.emissionRange = .pi * 0.5 // 發射角度的容差範圍
+        
+        cell.yAcceleration = 50  //  y 軸加速度
+        
+        
+        
+        cell.spin = .pi // 旋轉度數
+        cell.spinRange = .pi  // 旋轉容差
+        
+        // scale 1~3
+        cell.scale = 2  // 放大倍率
+        cell.scaleRange = 1 // 放大容錯率
+        
+        //add particle template to emitter
+        emitter.emitterCells = [cell]
+        
+    }
     
+    @IBAction func avPlayerLayerBtn(_ sender: Any) {
+        self.clearLayer()
+        
+        let url = Bundle.main.url(forResource: "song", withExtension: "mp4")!
+        let player = AVPlayer(url: url)
+        let playerLayer = AVPlayerLayer(player: player)
+        
+        //set player layer frame and attach it to our view
+        playerLayer.frame = self.containerView.bounds
+        self.containerView.layer.addSublayer(playerLayer)
+        playerLayer.videoGravity = .resize
+        player.play()
+        
+        
+        //transform layer
+        var transform = CATransform3DIdentity
+        transform.m34 = -1 / 500
+        transform = CATransform3DRotate(transform, .pi / 4 , 1, 1, 0)
+        playerLayer.transform = transform
+        
+        //add rounded corners and border
+        playerLayer.masksToBounds = true
+        playerLayer.cornerRadius = 20
+        playerLayer.borderColor = UIColor.red.cgColor
+        playerLayer.borderWidth = 5
+        
+        
+    }
+        
+        
 }
 extension SpecializedLayersViewController
 {
@@ -133,7 +244,6 @@ extension SpecializedLayersViewController
     }
     func cube(withTranform transform : CATransform3D) -> CALayer
     {
-        
         //create cube layer
         let cube = CATransformLayer()
         //add cube face 1
@@ -192,3 +302,4 @@ extension SpecializedLayersViewController
     }
     
 }
+

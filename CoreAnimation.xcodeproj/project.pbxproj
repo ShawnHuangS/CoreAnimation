@@ -14,14 +14,18 @@
 		2122FD4F2240E96D00D46902 /* LayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD4E2240E96D00D46902 /* LayerViewController.swift */; };
 		2122FD51224225D600D46902 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD50224225D600D46902 /* README.md */; };
 		214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214028FB22534F1700680DCE /* VisualEffectsViewController.swift */; };
-		214028FF2254ADBC00680DCE /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214028FD2254ADBC00680DCE /* ball.jpg */; };
-		214029002254ADBC00680DCE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 214028FE2254ADBC00680DCE /* star.png */; };
 		21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */; };
-		21627CE92248DAA300598E00 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 21627CE82248DAA200598E00 /* snowman.png */; };
 		21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */; };
-		21934184224CC90500FAE76B /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 21934183224CC90500FAE76B /* clock.png */; };
-		21B731D1225B28D5002FCE78 /* digit.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B731D0225B28D4002FCE78 /* digit.png */; };
 		21B731D3225B2DC4002FCE78 /* TransformsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */; };
+		21CC81512267227E00155DCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CC81502267227E00155DCE /* AVFoundation.framework */; };
+		21CC815D2267284600155DCE /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81552267284600155DCE /* ball.jpg */; };
+		21CC815E2267284600155DCE /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81562267284600155DCE /* snow.png */; };
+		21CC815F2267284600155DCE /* maple.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81572267284600155DCE /* maple.png */; };
+		21CC81602267284600155DCE /* digit.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81582267284600155DCE /* digit.png */; };
+		21CC81612267284600155DCE /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81592267284600155DCE /* clock.png */; };
+		21CC81622267284600155DCE /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC815A2267284600155DCE /* snowman.png */; };
+		21CC81632267284600155DCE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 21CC815B2267284600155DCE /* star.png */; };
+		21CC81642267284600155DCE /* song.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 21CC815C2267284600155DCE /* song.mp4 */; };
 		21E489F2223A42AD00AB790A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E489F1223A42AD00AB790A /* AppDelegate.swift */; };
 		21E489F4223A42AD00AB790A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E489F3223A42AD00AB790A /* ViewController.swift */; };
 		21E489F7223A42AD00AB790A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E489F5223A42AD00AB790A /* Main.storyboard */; };
@@ -38,14 +42,20 @@
 		2122FD4E2240E96D00D46902 /* LayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViewController.swift; sourceTree = "<group>"; };
 		2122FD50224225D600D46902 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		214028FB22534F1700680DCE /* VisualEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsViewController.swift; sourceTree = "<group>"; };
-		214028FD2254ADBC00680DCE /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
-		214028FE2254ADBC00680DCE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBackingImageViewController.swift; sourceTree = "<group>"; };
-		21627CE82248DAA200598E00 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
 		21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerGeometryViewController.swift; sourceTree = "<group>"; };
-		21934183224CC90500FAE76B /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
-		21B731D0225B28D4002FCE78 /* digit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = digit.png; sourceTree = "<group>"; };
 		21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformsViewController.swift; sourceTree = "<group>"; };
+		21CC814C22671A2A00155DCE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		21CC814E22671A3400155DCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		21CC81502267227E00155DCE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		21CC81552267284600155DCE /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
+		21CC81562267284600155DCE /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		21CC81572267284600155DCE /* maple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maple.png; sourceTree = "<group>"; };
+		21CC81582267284600155DCE /* digit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = digit.png; sourceTree = "<group>"; };
+		21CC81592267284600155DCE /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		21CC815A2267284600155DCE /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
+		21CC815B2267284600155DCE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		21CC815C2267284600155DCE /* song.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = song.mp4; sourceTree = "<group>"; };
 		21E489EE223A42AD00AB790A /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E489F1223A42AD00AB790A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21E489F3223A42AD00AB790A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,22 +71,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21CC81512267227E00155DCE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21627CE72248DA9500598E00 /* Resouece */ = {
+		21CC814B22671A2A00155DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				21934183224CC90500FAE76B /* clock.png */,
-				21627CE82248DAA200598E00 /* snowman.png */,
-				214028FD2254ADBC00680DCE /* ball.jpg */,
-				214028FE2254ADBC00680DCE /* star.png */,
-				21B731D0225B28D4002FCE78 /* digit.png */,
+				21CC81502267227E00155DCE /* AVFoundation.framework */,
+				21CC814E22671A3400155DCE /* OpenGLES.framework */,
+				21CC814C22671A2A00155DCE /* GLKit.framework */,
 			);
-			path = Resouece;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21CC81542267284600155DCE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				21CC81552267284600155DCE /* ball.jpg */,
+				21CC81562267284600155DCE /* snow.png */,
+				21CC81572267284600155DCE /* maple.png */,
+				21CC81582267284600155DCE /* digit.png */,
+				21CC81592267284600155DCE /* clock.png */,
+				21CC815A2267284600155DCE /* snowman.png */,
+				21CC815B2267284600155DCE /* star.png */,
+				21CC815C2267284600155DCE /* song.mp4 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		21E489E5223A42AD00AB790A = {
@@ -86,6 +110,7 @@
 				21E48A05223A4D7300AB790A /* .gitignore */,
 				21E489F0223A42AD00AB790A /* CoreAnimation */,
 				21E489EF223A42AD00AB790A /* Products */,
+				21CC814B22671A2A00155DCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +125,7 @@
 		21E489F0223A42AD00AB790A /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				21627CE72248DA9500598E00 /* Resouece */,
+				21CC81542267284600155DCE /* Resource */,
 				21E489F1223A42AD00AB790A /* AppDelegate.swift */,
 				21E489F3223A42AD00AB790A /* ViewController.swift */,
 				2122FD4E2240E96D00D46902 /* LayerViewController.swift */,
@@ -178,17 +203,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21934184224CC90500FAE76B /* clock.png in Resources */,
-				214029002254ADBC00680DCE /* star.png in Resources */,
+				21CC815F2267284600155DCE /* maple.png in Resources */,
 				2122FD51224225D600D46902 /* README.md in Resources */,
 				21E48A06223A4D7300AB790A /* .gitignore in Resources */,
+				21CC815E2267284600155DCE /* snow.png in Resources */,
 				21E489FC223A42B000AB790A /* LaunchScreen.storyboard in Resources */,
-				214028FF2254ADBC00680DCE /* ball.jpg in Resources */,
-				21627CE92248DAA300598E00 /* snowman.png in Resources */,
-				21B731D1225B28D5002FCE78 /* digit.png in Resources */,
+				21CC81622267284600155DCE /* snowman.png in Resources */,
+				21CC81602267284600155DCE /* digit.png in Resources */,
 				2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */,
+				21CC81642267284600155DCE /* song.mp4 in Resources */,
+				21CC81612267284600155DCE /* clock.png in Resources */,
+				21CC81632267284600155DCE /* star.png in Resources */,
 				21E489F9223A42B000AB790A /* Assets.xcassets in Resources */,
 				21E489F7223A42AD00AB790A /* Main.storyboard in Resources */,
+				21CC815D2267284600155DCE /* ball.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

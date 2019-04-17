@@ -35,6 +35,7 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : ItemCell = ItemCell.configListItem(tableView: tableView, indexPath: indexPath)
+        
         return cell
     }
     
