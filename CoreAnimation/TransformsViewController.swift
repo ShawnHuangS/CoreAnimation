@@ -26,6 +26,7 @@ class TransformsViewController: UIViewController {
             
             UIView.animate(withDuration: 2, animations: {
                 self.transformImg.transform = transform
+                
             }) { (bool) in
                 UIView.animate(withDuration: 1, animations: {
                     self.transformImg.transform = CGAffineTransform.identity

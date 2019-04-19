@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        self.tableView(tableView, didSelectRowAt: IndexPath(row: 5, section: 0))
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 6, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -51,6 +51,7 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
         var vc : UIViewController
         
         switch animationVC {
+            
             case .The_Layer_Tree:
                 vc = LayerViewController()
             case .The_Backing_Image:
@@ -63,6 +64,9 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
                 vc  = Vcs.getVC(vc: .TransformsVC)
             case .SpecializedLayers:
                 vc = Vcs.getVC(vc: .SpecializedLayersVC)
+            case .ImplicitAnimations:
+                vc = Vcs.getVC(vc: .ImplicitAnimationsVC)
+            
             
         }
         
