@@ -45,7 +45,7 @@ class ImplicitAnimationsViewController: UIViewController {
         
         bottomRightLayer.frame = bottomLeftColorView.bounds
         bottomRightLayer.backgroundColor = randomColor()
-        bottomRightColorView.layer.addSublayer(bottomLeftLayer)
+        bottomRightColorView.layer.addSublayer(bottomRightLayer)
         
     }
     
@@ -116,15 +116,15 @@ extension ImplicitAnimationsViewController
         if let point = touches.first?.location(in: bottomRightColorView)
         {
             //check if we've tapped the moving layer
-            if ((self.bottomLeftLayer.presentation()?.hitTest(point)) != nil)
+            if ((self.bottomRightLayer.presentation()?.hitTest(point)) != nil)
             {
-                self.bottomLeftLayer.backgroundColor = randomColor()
+                self.bottomRightLayer.backgroundColor = randomColor()
             }
             else
             {
                 CATransaction.begin()
                 CATransaction.setAnimationDuration(2)
-                self.bottomLeftLayer.position = point
+                self.bottomRightLayer.position = point
                 CATransaction.commit()
             }
         }
