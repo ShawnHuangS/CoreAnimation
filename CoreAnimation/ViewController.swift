@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        self.tableView(tableView, didSelectRowAt: IndexPath(row: 6, section: 0))
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 7, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -66,6 +66,15 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
                 vc = Vcs.getVC(vc: .SpecializedLayersVC)
             case .ImplicitAnimations:
                 vc = Vcs.getVC(vc: .ImplicitAnimationsVC)
+            case .ExplicitAnimations:
+            
+                vc = Vcs.getVC(vc: .ExplicitAnimationsVC)
+                let transition = CATransition()
+                transition.type = .push
+                transition.subtype = .fromBottom
+                transition.duration = 2
+                self.navigationController?.view.layer.add(transition, forKey: nil)
+            
             
             
         }

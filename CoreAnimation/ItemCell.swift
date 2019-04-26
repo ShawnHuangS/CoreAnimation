@@ -17,6 +17,7 @@ enum Animation : String , CaseIterable{
     case Transforms = "Transforms"
     case SpecializedLayers = "SpecializedLayers"
     case ImplicitAnimations = "ImplicitAnimations"
+    case ExplicitAnimations = "ExplicitAnimations"
     
 }
 

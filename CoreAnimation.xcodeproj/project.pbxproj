@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21038234225CA7F7008A68EC /* SpecializedLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21038233225CA7F7008A68EC /* SpecializedLayersViewController.swift */; };
+		2114D2E12270452B006A05B6 /* ExplictAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */; };
 		2122FD492240CE7900D46902 /* SharedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD482240CE7700D46902 /* SharedMethod.swift */; };
 		2122FD4C2240CFD400D46902 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD4A2240CFD400D46902 /* ItemCell.swift */; };
 		2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD4B2240CFD400D46902 /* ItemCell.xib */; };
@@ -15,6 +16,7 @@
 		2122FD51224225D600D46902 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD50224225D600D46902 /* README.md */; };
 		214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214028FB22534F1700680DCE /* VisualEffectsViewController.swift */; };
 		21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */; };
+		2175AC292271A72A0094233B /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 2175AC282271A72A0094233B /* ship.png */; };
 		21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */; };
 		21B731D3225B2DC4002FCE78 /* TransformsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */; };
 		21CC81512267227E00155DCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CC81502267227E00155DCE /* AVFoundation.framework */; };
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		21038233225CA7F7008A68EC /* SpecializedLayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializedLayersViewController.swift; sourceTree = "<group>"; };
+		2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplictAnimationsViewController.swift; sourceTree = "<group>"; };
 		2122FD482240CE7700D46902 /* SharedMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMethod.swift; sourceTree = "<group>"; };
 		2122FD4A2240CFD400D46902 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		2122FD4B2240CFD400D46902 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		2122FD50224225D600D46902 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		214028FB22534F1700680DCE /* VisualEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectsViewController.swift; sourceTree = "<group>"; };
 		21627CE52248C61B00598E00 /* TheBackingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBackingImageViewController.swift; sourceTree = "<group>"; };
+		2175AC282271A72A0094233B /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerGeometryViewController.swift; sourceTree = "<group>"; };
 		21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformsViewController.swift; sourceTree = "<group>"; };
 		21CC814C22671A2A00155DCE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -98,6 +102,7 @@
 				21CC81572267284600155DCE /* maple.png */,
 				21CC81582267284600155DCE /* digit.png */,
 				21CC81592267284600155DCE /* clock.png */,
+				2175AC282271A72A0094233B /* ship.png */,
 				21CC815A2267284600155DCE /* snowman.png */,
 				21CC815B2267284600155DCE /* star.png */,
 				21CC815C2267284600155DCE /* song.mp4 */,
@@ -137,6 +142,7 @@
 				21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */,
 				21038233225CA7F7008A68EC /* SpecializedLayersViewController.swift */,
 				21CC816522682DDC00155DCE /* ImplicitAnimationsViewController.swift */,
+				2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */,
 				21E489F5223A42AD00AB790A /* Main.storyboard */,
 				2122FD482240CE7700D46902 /* SharedMethod.swift */,
 				2122FD4A2240CFD400D46902 /* ItemCell.swift */,
@@ -217,6 +223,7 @@
 				21CC81642267284600155DCE /* song.mp4 in Resources */,
 				21CC81612267284600155DCE /* clock.png in Resources */,
 				21CC81632267284600155DCE /* star.png in Resources */,
+				2175AC292271A72A0094233B /* ship.png in Resources */,
 				21E489F9223A42B000AB790A /* Assets.xcassets in Resources */,
 				21E489F7223A42AD00AB790A /* Main.storyboard in Resources */,
 				21CC815D2267284600155DCE /* ball.jpg in Resources */,
@@ -233,6 +240,7 @@
 				21038234225CA7F7008A68EC /* SpecializedLayersViewController.swift in Sources */,
 				21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */,
 				21CC816622682DDC00155DCE /* ImplicitAnimationsViewController.swift in Sources */,
+				2114D2E12270452B006A05B6 /* ExplictAnimationsViewController.swift in Sources */,
 				21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */,
 				2122FD4C2240CFD400D46902 /* ItemCell.swift in Sources */,
 				2122FD492240CE7900D46902 /* SharedMethod.swift in Sources */,

@@ -43,6 +43,7 @@ class Vcs  {
         case TransformsVC = "TransformsVC"
         case SpecializedLayersVC = "SpecializedLayersVC"
         case ImplicitAnimationsVC = "ImplicitAnimationsVC"
+        case ExplicitAnimationsVC = "ExplicitAnimationsVC"
             
     }
     
