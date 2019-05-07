@@ -49,8 +49,9 @@ class ExplictAnimationsViewController: UIViewController {
 //        create a path
         let bezierPath = UIBezierPath()
         bezierPath.move(to: CGPoint.init(x: 0, y: centerPoint.y))
-        bezierPath.addCurve(to: CGPoint(x: self.upperLeftView.frame.width, y: centerPoint.y), controlPoint1: CGPoint(x: centerPoint.x / 2 , y: centerPoint.y / 2), controlPoint2:
-            CGPoint(x: centerPoint.x / 2 * 3, y: centerPoint.y / 2 * 3))
+        bezierPath.addCurve(to: CGPoint(x: self.upperLeftView.frame.width, y: centerPoint.y),
+                            controlPoint1: CGPoint(x: centerPoint.x / 2 , y: centerPoint.y / 2),
+                            controlPoint2: CGPoint(x: centerPoint.x / 2 * 3, y: centerPoint.y / 2 * 3))
         
 
         //draw the path using a CAShapeLayer

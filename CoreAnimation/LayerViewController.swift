@@ -37,8 +37,25 @@ class LayerViewController: UIViewController {
         
         self.layerView.layer.addSublayer(blueLayer)
        
+
+        
+        
+//        let baseAnaimation = CABasicAnimation()
+//        baseAnaimation.keyPath = "transform.rotation"
+//        baseAnaimation.duration =  4
+////        baseAnaimation.repeatCount =  3
+//        baseAnaimation.byValue = Double.pi * 2 - 0.1
+//        baseAnaimation.isRemovedOnCompletion = false
+//        baseAnaimation.fillMode = .forwards
+//        blueLayer.add(baseAnaimation, forKey: "rotateAnimation")
+
+        
+        
         
     }
+    
+
+    
     /*
     // MARK: - Navigation
 

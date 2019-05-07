@@ -71,9 +71,12 @@ class LayerGeometryViewController: UIViewController {
         calendar.timeZone = tZone
         
         let currentTime = calendar.dateComponents([.hour,.minute,.second], from: currentDate)
- 
-        let secondAngle = CGFloat(Double(currentTime.second!) * (Double.pi * 2 / 60))
-        secondView.transform = CGAffineTransform.init(rotationAngle: CGFloat(secondAngle))
+        
+        UIView.animate(withDuration: 1) {
+            let secondAngle = CGFloat(Double(currentTime.second!) * (Double.pi * 2 / 60))
+            self.secondView.transform = CGAffineTransform.init(rotationAngle: CGFloat(secondAngle))
+        }
+        
         
         let minuteAngle = CGFloat ( Double(currentTime.minute!) * (Double.pi * 2.0 / 60) )
         minuteView.transform = CGAffineTransform(rotationAngle: minuteAngle)
