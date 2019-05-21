@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		21038234225CA7F7008A68EC /* SpecializedLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21038233225CA7F7008A68EC /* SpecializedLayersViewController.swift */; };
 		2114D2E12270452B006A05B6 /* ExplictAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */; };
+		2122E8B922842BBD0023A02E /* EasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E8B822842BBD0023A02E /* EasingViewController.swift */; };
+		2122E8BB22842D4C0023A02E /* AnimationVelocityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E8BA22842D4C0023A02E /* AnimationVelocityViewController.swift */; };
+		2122E8BD22842D700023A02E /* CustomEasingFunctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E8BC22842D700023A02E /* CustomEasingFunctionsViewController.swift */; };
 		2122FD492240CE7900D46902 /* SharedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD482240CE7700D46902 /* SharedMethod.swift */; };
 		2122FD4C2240CFD400D46902 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122FD4A2240CFD400D46902 /* ItemCell.swift */; };
 		2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2122FD4B2240CFD400D46902 /* ItemCell.xib */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		21038233225CA7F7008A68EC /* SpecializedLayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializedLayersViewController.swift; sourceTree = "<group>"; };
 		2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplictAnimationsViewController.swift; sourceTree = "<group>"; };
+		2122E8B822842BBD0023A02E /* EasingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasingViewController.swift; sourceTree = "<group>"; };
+		2122E8BA22842D4C0023A02E /* AnimationVelocityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVelocityViewController.swift; sourceTree = "<group>"; };
+		2122E8BC22842D700023A02E /* CustomEasingFunctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEasingFunctionsViewController.swift; sourceTree = "<group>"; };
 		2122FD482240CE7700D46902 /* SharedMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMethod.swift; sourceTree = "<group>"; };
 		2122FD4A2240CFD400D46902 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		2122FD4B2240CFD400D46902 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				21CC816522682DDC00155DCE /* ImplicitAnimationsViewController.swift */,
 				2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */,
 				216EC5A5227ACAE100601FF0 /* LayerTimeViewController.swift */,
+				2122E8B822842BBD0023A02E /* EasingViewController.swift */,
+				2122E8BA22842D4C0023A02E /* AnimationVelocityViewController.swift */,
+				2122E8BC22842D700023A02E /* CustomEasingFunctionsViewController.swift */,
 				2122FD482240CE7700D46902 /* SharedMethod.swift */,
 				21E489F5223A42AD00AB790A /* Main.storyboard */,
 				2122FD4A2240CFD400D46902 /* ItemCell.swift */,
@@ -246,6 +255,7 @@
 			files = (
 				21038234225CA7F7008A68EC /* SpecializedLayersViewController.swift in Sources */,
 				21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */,
+				2122E8BB22842D4C0023A02E /* AnimationVelocityViewController.swift in Sources */,
 				21CC816622682DDC00155DCE /* ImplicitAnimationsViewController.swift in Sources */,
 				2114D2E12270452B006A05B6 /* ExplictAnimationsViewController.swift in Sources */,
 				21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */,
@@ -257,6 +267,8 @@
 				214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */,
 				21E489F2223A42AD00AB790A /* AppDelegate.swift in Sources */,
 				2122FD4F2240E96D00D46902 /* LayerViewController.swift in Sources */,
+				2122E8BD22842D700023A02E /* CustomEasingFunctionsViewController.swift in Sources */,
+				2122E8B922842BBD0023A02E /* EasingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

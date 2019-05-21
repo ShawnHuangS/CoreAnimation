@@ -36,7 +36,7 @@ class LayerTimeViewController: UIViewController {
         super.viewDidLoad()
         
 
-        self.setUpperLefeView()
+        self.setUpperLeftView()
         self.setUpperRightView()
         self.setBottomLeftView()
         self.setBottomRightView()
@@ -54,7 +54,7 @@ class LayerTimeViewController: UIViewController {
 }
 extension LayerTimeViewController
 {
-    func setUpperLefeView()
+    func setUpperLeftView()
     {
         //upperLeftView
         
@@ -124,8 +124,6 @@ extension LayerTimeViewController
     }
     func setBottomRightView()
     {
-        
-        
         //bottomRightView
         //add the door
         bottomRightDoorLayer.frame = CGRect.init(x: 0, y: 0, width: bottomRightView.frame.size.width / 2 * 2 - 20, height: bottomRightView.frame.size.height / 2)
@@ -171,9 +169,6 @@ extension LayerTimeViewController
         self.bottomRightDoorLayer.timeOffset = CFTimeInterval(timeOffset)
         //reset pan gesture
         pan.setTranslation(CGPoint.zero, in: self.bottomRightView)
-        
-        
-        
         
     }
 }
@@ -232,7 +227,6 @@ extension LayerTimeViewController : CAAnimationDelegate{
             control?.isEnabled = enable
             control?.alpha = enable ? 1.0 : 0.25
         }
-        
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {

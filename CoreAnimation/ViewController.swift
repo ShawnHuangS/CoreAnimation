@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
 
         super.viewDidLoad()
-        self.tableView(tableView, didSelectRowAt: IndexPath(row: 8, section: 0))
+        self.tableView(tableView, didSelectRowAt: IndexPath(row: 9, section: 0))
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -70,6 +70,8 @@ extension ViewController : UITableViewDataSource , UITableViewDelegate
                 vc = Vcs.getVC(vc: .ExplicitAnimationsVC)
             case .LayerTime:
                 vc = Vcs.getVC(vc: .LayerTimeVC)
+            case .Easing:
+                vc = Vcs.getVC(vc: .EasingVC)
             
             
         }

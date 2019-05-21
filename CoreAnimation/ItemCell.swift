@@ -19,7 +19,7 @@ enum Animation : String , CaseIterable{
     case ImplicitAnimations = "ImplicitAnimations"
     case ExplicitAnimations = "ExplicitAnimations"
     case LayerTime = "LayerTime"
-    
+    case Easing = "Easing"
 }
 
 class ItemCell: UITableViewCell {

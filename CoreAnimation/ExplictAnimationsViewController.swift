@@ -179,7 +179,6 @@ class ExplictAnimationsViewController: UIViewController {
         basicAnimation.repeatCount = MAXFLOAT
         basicAnimation.delegate = self
         self.shipLayer.add(basicAnimation, forKey: "rotateAnimationKey")
-        
     }
     
     

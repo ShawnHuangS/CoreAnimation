@@ -45,7 +45,9 @@ class Vcs  {
         case ImplicitAnimationsVC = "ImplicitAnimationsVC"
         case ExplicitAnimationsVC = "ExplicitAnimationsVC"
         case LayerTimeVC = "LayerTimeVC"
-            
+        case EasingVC = "EasingVC"
+        case AnimationVelocityVC = "AnimationVelocityVC"
+        case CustomEasingFunctionsVC = "CustomEasingFunctionsVC"
     }
     
     static func getVC(vc : storyboardID) -> UIViewController

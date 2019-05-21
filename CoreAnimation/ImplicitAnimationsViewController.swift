@@ -31,6 +31,11 @@ class ImplicitAnimationsViewController: UIViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
+     
+    }
+   
+    override func viewDidAppear(_ animated: Bool) {
+     
         upperLeftLayer.frame = upperLeftColorView.bounds
         upperLeftLayer.backgroundColor = randomColor()
         upperLeftColorView.layer.addSublayer(upperLeftLayer)
@@ -46,12 +51,6 @@ class ImplicitAnimationsViewController: UIViewController {
         bottomRightLayer.frame = bottomLeftColorView.bounds
         bottomRightLayer.backgroundColor = randomColor()
         bottomRightColorView.layer.addSublayer(bottomRightLayer)
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-       
-
     }
    
     
@@ -143,9 +142,6 @@ extension ImplicitAnimationsViewController
         let blue = CGFloat.random(in: 0 ... 1 )
         return UIColor(red: red, green: green, blue: blue, alpha: 1).cgColor
     }
-        
-    
-    
     
 }
 
