@@ -40,6 +40,7 @@
 		21E489F9223A42B000AB790A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E489F8223A42B000AB790A /* Assets.xcassets */; };
 		21E489FC223A42B000AB790A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E489FA223A42B000AB790A /* LaunchScreen.storyboard */; };
 		21E48A06223A4D7300AB790A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 21E48A05223A4D7300AB790A /* .gitignore */; };
+		21F49B3822954C810010BFC2 /* ball_png.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F49B3722954C810010BFC2 /* ball_png.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		21E489FB223A42B000AB790A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21E489FD223A42B000AB790A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21E48A05223A4D7300AB790A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		21F49B3722954C810010BFC2 /* ball_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_png.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		21CC81542267284600155DCE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				21F49B3722954C810010BFC2 /* ball_png.png */,
 				21CC81552267284600155DCE /* ball.jpg */,
 				21CC81562267284600155DCE /* snow.png */,
 				21CC81572267284600155DCE /* maple.png */,
@@ -156,8 +159,7 @@
 				2114D2E02270452B006A05B6 /* ExplictAnimationsViewController.swift */,
 				216EC5A5227ACAE100601FF0 /* LayerTimeViewController.swift */,
 				2122E8B822842BBD0023A02E /* EasingViewController.swift */,
-				2122E8BA22842D4C0023A02E /* AnimationVelocityViewController.swift */,
-				2122E8BC22842D700023A02E /* CustomEasingFunctionsViewController.swift */,
+				21F49B362295350D0010BFC2 /* Easing */,
 				2122FD482240CE7700D46902 /* SharedMethod.swift */,
 				21E489F5223A42AD00AB790A /* Main.storyboard */,
 				2122FD4A2240CFD400D46902 /* ItemCell.swift */,
@@ -167,6 +169,15 @@
 				21E489FD223A42B000AB790A /* Info.plist */,
 			);
 			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		21F49B362295350D0010BFC2 /* Easing */ = {
+			isa = PBXGroup;
+			children = (
+				2122E8BA22842D4C0023A02E /* AnimationVelocityViewController.swift */,
+				2122E8BC22842D700023A02E /* CustomEasingFunctionsViewController.swift */,
+			);
+			name = Easing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				21CC81622267284600155DCE /* snowman.png in Resources */,
 				21CC81602267284600155DCE /* digit.png in Resources */,
 				2122FD4D2240CFD400D46902 /* ItemCell.xib in Resources */,
+				21F49B3822954C810010BFC2 /* ball_png.png in Resources */,
 				21CC81642267284600155DCE /* song.mp4 in Resources */,
 				21CC81612267284600155DCE /* clock.png in Resources */,
 				21CC81632267284600155DCE /* star.png in Resources */,

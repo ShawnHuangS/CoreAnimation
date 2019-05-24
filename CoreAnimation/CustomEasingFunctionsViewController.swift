@@ -13,12 +13,23 @@ class CustomEasingFunctionsViewController: UIViewController {
     @IBOutlet weak var upperLeftLayerView: UIView!
     @IBOutlet weak var upperLeftTypeLabel: UILabel!
     
+    var ballImgCenterPoint = CGPoint.zero
+    var fallPointY = CGFloat.zero
+    @IBOutlet weak var upperRightBallImg: UIImageView!
+    @IBOutlet weak var upperRightLineView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setUpperLeftView()
-
+        print(upperRightBallImg.center)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        ballImgCenterPoint = upperRightBallImg.center
+        fallPointY = upperRightLineView.frame.origin.y - (upperRightBallImg.frame.size.height / 2)
+        
+        
     }
     
     
@@ -66,4 +77,50 @@ extension CustomEasingFunctionsViewController
         self.setUpperLeftView()
     }
     
+    @IBAction func upperRightAnimateBtnPress(_ sender: Any) {
+//  center point (93.75, 150.75)
+        upperRightBallImg.center = ballImgCenterPoint
+        
+        let diffHeight = fallPointY - ballImgCenterPoint.y
+        let caKeyFrameAnimation : CAKeyframeAnimation = CAKeyframeAnimation()
+        caKeyFrameAnimation.keyPath = "position"
+        caKeyFrameAnimation.duration = 2.0
+        caKeyFrameAnimation.delegate = self
+        caKeyFrameAnimation.values =
+            [NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 3)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 2)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 1.5)),
+             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY))]
+        
+        caKeyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: .easeIn),
+                                               CAMediaTimingFunction(name: .easeOut),
+                                               CAMediaTimingFunction(name: .easeIn),
+                                               CAMediaTimingFunction(name: .easeOut),
+                                               CAMediaTimingFunction(name: .easeIn),
+                                               CAMediaTimingFunction(name: .easeOut),
+                                               CAMediaTimingFunction(name: .easeIn)]
+        
+        caKeyFrameAnimation.keyTimes = [0.0, 0.3, 0.5, 0.7, 0.8, 0.9, 0.95, 1.0]
+        self.upperRightBallImg.layer.position = CGPoint(x: ballImgCenterPoint.x, y: fallPointY)
+        self.upperRightBallImg.layer.add(caKeyFrameAnimation, forKey: nil)
+        
+    
+    }
+    
+ 
 }
+
+extension CustomEasingFunctionsViewController : CAAnimationDelegate
+{
+    func animationDidStart(_ anim: CAAnimation) {
+        print("animation start")
+    }
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        print("animation stop")
+    }
+}
+

@@ -187,15 +187,6 @@ class ExplictAnimationsViewController: UIViewController {
         
     }
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        print("The animation stopped finished :  \(flag ? "Yes" : "No" )  ")
-    }
-    
-}
-extension ExplictAnimationsViewController : CAAnimationDelegate
-{
-   
-    
     func randomColor(isCgColor : Bool = true) -> CGColor
     {
         let red = CGFloat.random(in: 0 ... 1 )
@@ -205,5 +196,13 @@ extension ExplictAnimationsViewController : CAAnimationDelegate
     }
     
     
+}
+extension ExplictAnimationsViewController : CAAnimationDelegate
+{
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        print("The animation stopped finished :  \(flag ? "Yes" : "No" )  ")
+    }
+    
+
     
 }
