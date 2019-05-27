@@ -13,24 +13,36 @@ class CustomEasingFunctionsViewController: UIViewController {
     @IBOutlet weak var upperLeftLayerView: UIView!
     @IBOutlet weak var upperLeftTypeLabel: UILabel!
     
-    var ballImgCenterPoint = CGPoint.zero
-    var fallPointY = CGFloat.zero
+    //upperRightView
+    var upperRightBallImgCenterPoint = CGPoint.zero
+    var upperRightFallPointY = CGFloat.zero
     @IBOutlet weak var upperRightBallImg: UIImageView!
     @IBOutlet weak var upperRightLineView: UIView!
+    
+     //bottomLeftView
+    var bottomLeftBallImgCenterPoint = CGPoint.zero
+    var bottomLeftFallPointY = CGFloat.zero
+    @IBOutlet weak var bottomLeftBallImg: UIImageView!
+    @IBOutlet weak var bottomLeftLineView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setUpperLeftView()
-        print(upperRightBallImg.center)
+        
     }
     override func viewDidAppear(_ animated: Bool) {
-        ballImgCenterPoint = upperRightBallImg.center
-        fallPointY = upperRightLineView.frame.origin.y - (upperRightBallImg.frame.size.height / 2)
+        //upperRight
+        upperRightBallImgCenterPoint = upperRightBallImg.center
+        upperRightFallPointY = upperRightLineView.frame.origin.y - (upperRightBallImg.frame.size.height / 2)
         
+        //bottomLeft
+        bottomLeftBallImgCenterPoint = bottomLeftBallImg.center
+        bottomLeftFallPointY = bottomLeftLineView.frame.origin.y - (bottomLeftBallImg.frame.size.height / 2)
         
     }
+    
     
     
     
@@ -79,22 +91,23 @@ extension CustomEasingFunctionsViewController
     
     @IBAction func upperRightAnimateBtnPress(_ sender: Any) {
 //  center point (93.75, 150.75)
-        upperRightBallImg.center = ballImgCenterPoint
+        upperRightBallImg.center = upperRightBallImgCenterPoint
         
-        let diffHeight = fallPointY - ballImgCenterPoint.y
+        let diffHeight = upperRightFallPointY - upperRightBallImgCenterPoint.y
         let caKeyFrameAnimation : CAKeyframeAnimation = CAKeyframeAnimation()
         caKeyFrameAnimation.keyPath = "position"
         caKeyFrameAnimation.duration = 2.0
         caKeyFrameAnimation.delegate = self
+        
         caKeyFrameAnimation.values =
-            [NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 3)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 2)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: ballImgCenterPoint.y + diffHeight / 1.5)),
-             NSValue(cgPoint: CGPoint(x: ballImgCenterPoint.x, y: fallPointY))]
+            [NSValue(cgPoint: upperRightBallImgCenterPoint),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightFallPointY)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightBallImgCenterPoint.y + diffHeight / 3)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightFallPointY)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightBallImgCenterPoint.y + diffHeight / 2)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightFallPointY)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightBallImgCenterPoint.y + diffHeight / 1.5)),
+             NSValue(cgPoint: CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightFallPointY))]
         
         caKeyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: .easeIn),
                                                CAMediaTimingFunction(name: .easeOut),
@@ -105,12 +118,74 @@ extension CustomEasingFunctionsViewController
                                                CAMediaTimingFunction(name: .easeIn)]
         
         caKeyFrameAnimation.keyTimes = [0.0, 0.3, 0.5, 0.7, 0.8, 0.9, 0.95, 1.0]
-        self.upperRightBallImg.layer.position = CGPoint(x: ballImgCenterPoint.x, y: fallPointY)
+        self.upperRightBallImg.layer.position = CGPoint(x: upperRightBallImgCenterPoint.x, y: upperRightFallPointY)
         self.upperRightBallImg.layer.add(caKeyFrameAnimation, forKey: nil)
+        
+        
         
     
     }
     
+// Automating the Process
+    @IBAction func bottomLeftAnimateBtnPress(_ sender: Any) {
+        bottomLeftBallImg.center = bottomLeftBallImgCenterPoint
+        
+        let fromValue = NSValue(cgPoint: bottomLeftBallImgCenterPoint)
+        let toValue = NSValue(cgPoint: CGPoint(x: bottomLeftBallImgCenterPoint.x, y: bottomLeftFallPointY))
+        
+        let duration : CFTimeInterval = 1.0
+        //generate keyframes
+        let numFrames : Int = Int(duration * 60)
+        var frames : [NSValue] = []
+        for i in 0...numFrames-1
+        {
+            
+            var time : Float = 1.0 / Float(numFrames) * Float(i)
+            time = bounceEaseoUT(t: time)
+            frames.append(interpolate(fromValue: fromValue, toValue: toValue, time: time))
+        }
+        
+        let caKeyFrameAnimation : CAKeyframeAnimation = CAKeyframeAnimation()
+        caKeyFrameAnimation.keyPath = "position"
+        caKeyFrameAnimation.duration = 1.0
+        caKeyFrameAnimation.delegate = self
+        
+        caKeyFrameAnimation.values = frames
+        self.bottomLeftBallImg.layer.add(caKeyFrameAnimation, forKey: nil)
+        
+    }
+    func interpolate(fromValue : NSValue ,toValue : NSValue , time : Float) -> NSValue
+    {
+       
+        let from = fromValue.cgPointValue
+        let to = toValue.cgPointValue
+       
+        let result = CGPoint(x: interpolate(from: from.x, to: to.x, time: CGFloat(time)) , y: interpolate(from: from.y, to: to.y, time: CGFloat(time)))
+        print(result)
+        return NSValue(cgPoint: result)
+    }
+    func interpolate(from : CGFloat , to : CGFloat , time : CGFloat) -> CGFloat
+    {
+        return (to - from) * time + from
+    }
+    func bounceEaseoUT(t : Float) -> Float
+    {
+        
+        if (t < 4/11.0)
+        {
+            return (121 * t * t)/16.0
+        }
+        else if (t < 8/11.0)
+        {
+            return (363/40.0 * t * t) - (99/10.0 * t) + 17/5.0
+        }
+        else if (t < 9/10.0)
+        {
+            return (4356/361.0 * t * t) - (35442/1805.0 * t) + 16061/1805.0
+        }
+        return (54/5.0 * t * t) - (513/25.0 * t) + 268/25.0
+        
+    }
  
 }
 
