@@ -46,6 +46,7 @@ class CustomEasingFunctionsViewController: UIViewController {
     
     
     
+    
 }
 extension CustomEasingFunctionsViewController
 {
@@ -141,7 +142,7 @@ extension CustomEasingFunctionsViewController
         {
             
             var time : Float = 1.0 / Float(numFrames) * Float(i)
-            time = bounceEaseoUT(t: time)
+            time = bounceEaseOut(t: time)
             frames.append(interpolate(fromValue: fromValue, toValue: toValue, time: time))
         }
         
@@ -168,7 +169,7 @@ extension CustomEasingFunctionsViewController
     {
         return (to - from) * time + from
     }
-    func bounceEaseoUT(t : Float) -> Float
+    func bounceEaseOut(t : Float) -> Float
     {
         
         if (t < 4/11.0)

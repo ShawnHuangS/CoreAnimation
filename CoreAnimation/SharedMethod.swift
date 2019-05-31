@@ -48,6 +48,12 @@ class Vcs  {
         case EasingVC = "EasingVC"
         case AnimationVelocityVC = "AnimationVelocityVC"
         case CustomEasingFunctionsVC = "CustomEasingFunctionsVC"
+        case TimerBasedAnimationVC = "TimerBasedAnimationVC"
+        case FrameTimingVC = "FrameTimingVC"
+        case EfficientDrawingVC = "EfficientDrawingVC"
+        case VectorGraphicsVC = "VectorGraphicsVC"
+        case DirtyRectanglesVC = "DirtyRectanglesVC"
+        
     }
     
     static func getVC(vc : storyboardID) -> UIViewController

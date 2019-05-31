@@ -23,6 +23,11 @@
 		216EC5A8227AF95800601FF0 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 216EC5A7227AF95800601FF0 /* door.png */; };
 		2175AC292271A72A0094233B /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 2175AC282271A72A0094233B /* ship.png */; };
 		21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */; };
+		21A3312A229BCC48002EF0A1 /* FrameTimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A33129229BCC48002EF0A1 /* FrameTimingViewController.swift */; };
+		21A3312E229BCCA6002EF0A1 /* TimerBasedAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3312D229BCCA6002EF0A1 /* TimerBasedAnimationViewController.swift */; };
+		21A33130229E79D1002EF0A1 /* EfficientDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3312F229E79D1002EF0A1 /* EfficientDrawingViewController.swift */; };
+		21A33133229E7A0D002EF0A1 /* VectorGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A33132229E7A0D002EF0A1 /* VectorGraphicsViewController.swift */; };
+		21A33135229E7A28002EF0A1 /* DirtyRectanglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A33134229E7A28002EF0A1 /* DirtyRectanglesViewController.swift */; };
 		21B731D3225B2DC4002FCE78 /* TransformsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */; };
 		21CC81512267227E00155DCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CC81502267227E00155DCE /* AVFoundation.framework */; };
 		21CC815D2267284600155DCE /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21CC81552267284600155DCE /* ball.jpg */; };
@@ -60,6 +65,11 @@
 		216EC5A7227AF95800601FF0 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
 		2175AC282271A72A0094233B /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		21934181224CAF4B00FAE76B /* LayerGeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerGeometryViewController.swift; sourceTree = "<group>"; };
+		21A33129229BCC48002EF0A1 /* FrameTimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTimingViewController.swift; sourceTree = "<group>"; };
+		21A3312D229BCCA6002EF0A1 /* TimerBasedAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBasedAnimationViewController.swift; sourceTree = "<group>"; };
+		21A3312F229E79D1002EF0A1 /* EfficientDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EfficientDrawingViewController.swift; sourceTree = "<group>"; };
+		21A33132229E7A0D002EF0A1 /* VectorGraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorGraphicsViewController.swift; sourceTree = "<group>"; };
+		21A33134229E7A28002EF0A1 /* DirtyRectanglesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyRectanglesViewController.swift; sourceTree = "<group>"; };
 		21B731D2225B2DC4002FCE78 /* TransformsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformsViewController.swift; sourceTree = "<group>"; };
 		21CC814C22671A2A00155DCE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		21CC814E22671A3400155DCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -96,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A33128229BCC0C002EF0A1 /* Timer Based Animation */ = {
+			isa = PBXGroup;
+			children = (
+				21A33129229BCC48002EF0A1 /* FrameTimingViewController.swift */,
+			);
+			name = "Timer Based Animation";
+			sourceTree = "<group>";
+		};
+		21A33131229E79DE002EF0A1 /* Efficient Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				21A33132229E7A0D002EF0A1 /* VectorGraphicsViewController.swift */,
+				21A33134229E7A28002EF0A1 /* DirtyRectanglesViewController.swift */,
+			);
+			name = "Efficient Drawing";
+			sourceTree = "<group>";
+		};
 		21CC814B22671A2A00155DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +187,10 @@
 				216EC5A5227ACAE100601FF0 /* LayerTimeViewController.swift */,
 				2122E8B822842BBD0023A02E /* EasingViewController.swift */,
 				21F49B362295350D0010BFC2 /* Easing */,
+				21A3312D229BCCA6002EF0A1 /* TimerBasedAnimationViewController.swift */,
+				21A33128229BCC0C002EF0A1 /* Timer Based Animation */,
+				21A3312F229E79D1002EF0A1 /* EfficientDrawingViewController.swift */,
+				21A33131229E79DE002EF0A1 /* Efficient Drawing */,
 				2122FD482240CE7700D46902 /* SharedMethod.swift */,
 				21E489F5223A42AD00AB790A /* Main.storyboard */,
 				2122FD4A2240CFD400D46902 /* ItemCell.swift */,
@@ -267,14 +298,19 @@
 			files = (
 				21038234225CA7F7008A68EC /* SpecializedLayersViewController.swift in Sources */,
 				21934182224CAF4B00FAE76B /* LayerGeometryViewController.swift in Sources */,
+				21A33130229E79D1002EF0A1 /* EfficientDrawingViewController.swift in Sources */,
 				2122E8BB22842D4C0023A02E /* AnimationVelocityViewController.swift in Sources */,
+				21A33133229E7A0D002EF0A1 /* VectorGraphicsViewController.swift in Sources */,
 				21CC816622682DDC00155DCE /* ImplicitAnimationsViewController.swift in Sources */,
 				2114D2E12270452B006A05B6 /* ExplictAnimationsViewController.swift in Sources */,
 				21627CE62248C61B00598E00 /* TheBackingImageViewController.swift in Sources */,
 				2122FD4C2240CFD400D46902 /* ItemCell.swift in Sources */,
+				21A3312A229BCC48002EF0A1 /* FrameTimingViewController.swift in Sources */,
+				21A33135229E7A28002EF0A1 /* DirtyRectanglesViewController.swift in Sources */,
 				216EC5A6227ACAE100601FF0 /* LayerTimeViewController.swift in Sources */,
 				2122FD492240CE7900D46902 /* SharedMethod.swift in Sources */,
 				21E489F4223A42AD00AB790A /* ViewController.swift in Sources */,
+				21A3312E229BCCA6002EF0A1 /* TimerBasedAnimationViewController.swift in Sources */,
 				21B731D3225B2DC4002FCE78 /* TransformsViewController.swift in Sources */,
 				214028FC22534F1700680DCE /* VisualEffectsViewController.swift in Sources */,
 				21E489F2223A42AD00AB790A /* AppDelegate.swift in Sources */,

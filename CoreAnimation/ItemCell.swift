@@ -16,10 +16,13 @@ enum Animation : String , CaseIterable{
     case Visual_Effects = "Visual Effects"
     case Transforms = "Transforms"
     case SpecializedLayers = "SpecializedLayers"
-    case ImplicitAnimations = "ImplicitAnimations"
-    case ExplicitAnimations = "ExplicitAnimations"
-    case LayerTime = "LayerTime"
+    case ImplicitAnimations = "Implicit Animations"
+    case ExplicitAnimations = "Explicit Animations"
+    case LayerTime = "Layer Time"
     case Easing = "Easing"
+    case TimerBasedAnimation = "Timer Based Animation"
+    case EfficientDrawing = "Efficient Drawing"
+    
 }
 
 class ItemCell: UITableViewCell {
