@@ -52,7 +52,7 @@ class Vcs  {
         case FrameTimingVC = "FrameTimingVC"
         case EfficientDrawingVC = "EfficientDrawingVC"
         case VectorGraphicsVC = "VectorGraphicsVC"
-        case DirtyRectanglesVC = "DirtyRectanglesVC"
+        
         
     }
     

@@ -88,6 +88,7 @@ class DrawingView : UIView {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let point = touches.first?.location(in: self) else { return }
         self.path?.addLine(to: point)
+        
         self.setNeedsDisplay()
     }
     
