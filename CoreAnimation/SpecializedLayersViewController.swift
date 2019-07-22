@@ -208,8 +208,10 @@ class SpecializedLayersViewController: UIViewController {
     @IBAction func avPlayerLayerBtn(_ sender: Any) {
         self.clearLayer()
         
-        let url = Bundle.main.url(forResource: "song", withExtension: "mp4")!
-        let player = AVPlayer(url: url)
+//        let url = Bundle.main.url(forResource: "song", withExtension: "mp4")!
+//        let player = AVPlayer(url: url)
+        let player = AVPlayer(url: URL(string: "https://wolverine.raywenderlich.com/content/ios/tutorials/video_streaming/foxVillage.mp4")!)
+        
         let playerLayer = AVPlayerLayer(player: player)
         
         //set player layer frame and attach it to our view

@@ -29,14 +29,14 @@ class EfficientDrawingViewController: UIViewController {
     
     
     @IBAction func dirtyRectanglesBtnPress(_ sender: Any) {
-        let vc = Vcs.getVC(vc: .DirtyRectanglesVC)
-        
-        let transition = CATransition()
-        transition.subtype = .fromBottom
-        transition.duration = 1.3
-        transition.type = .reveal
-        self.navigationController?.view.layer.add(transition, forKey: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = Vcs.getVC(vc: .DirtyRectanglesVC)
+//        
+//        let transition = CATransition()
+//        transition.subtype = .fromBottom
+//        transition.duration = 1.3
+//        transition.type = .reveal
+//        self.navigationController?.view.layer.add(transition, forKey: nil)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     /*

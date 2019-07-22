@@ -24,7 +24,6 @@ class VectorGraphicsViewController: UIViewController {
         
     }
     
-   
 }
 
 class DrawingView : UIView {
